@@ -5,7 +5,7 @@ const work = [
   { year: 2026, label: "PERSONAL / DATA VISUALIZATION", title: "P.R.N.D.L NYC",
     href: "https://nyc-city-patterns-2026.bryanryu97.chatgpt.site/",
     summary: "Park at youR owN risk Dude Lol",
-    details: "Built in ChatGPT, P.R.N.D.L NYC turns NYC parking-ticket data into an interactive map and a location-based risk score. Choose a spot or use your location to explore historical ticket activity by weekday and hour, see peak ticketing times, and visualize parking-ticket patterns across the city. The score reflects relative historical activity—not your probability of getting a ticket or permission to park. Coverage is partial; always check signs, meters, and curb rules. Park at your own risk!",
+    details: "Built in ChatGPT, P.R.N.D.L NYC turns NYC parking-ticket data into an interactive map and a location-based risk score. Park at your own risk!",
     tags: ["ChatGPT", "NYC Open Data", "Data visualization"], tone: "cream" },
   { year: 2020, label: "PERSONAL / MOBILE", title: "Cook’d",
     href: "https://github.com/Do-Jest-While-True",
