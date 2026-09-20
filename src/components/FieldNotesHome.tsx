@@ -79,15 +79,15 @@ export function FieldNotesHome() {
           <div className="field-hero-copy">
             <div className="field-kicker"><span className="field-kicker-line" /> NEW YORK, NY <span className="field-kicker-star">✳</span> SENIOR PRODUCT MANAGER</div>
             <h1 id="hero-title">Hi, I’m Bryan.<br /><em>I connect</em> the dots and lines.</h1>
-            <p className="field-hero-deck">I build products at the intersection of people, complex systems, and useful AI. Currently leading integrations for humans, AI tools, and AI agents at Aircall.</p>
             <div className="field-hero-actions">
               <a className="field-button-primary" href="#work">Explore my projects <span aria-hidden="true">↗</span></a>
               <a className="field-button-text" href="/Bryan_Ryu_Resume_2026.pdf" target="_blank" rel="noreferrer">View resume <span aria-hidden="true">↗</span></a>
             </div>
-            <div className="field-hero-caption">A living record of what I’ve built, learned, and followed.<span className="field-critter-invitation">Interact with the ascii critters throughout the page!</span></div>
+            <p className="field-hero-deck">I build products at the intersection of people, complex systems, and useful AI. Currently leading integrations for humans, AI tools, and AI agents at Aircall.</p>
           </div>
           <div className="field-dog-scene">
             <Jimmy />
+            <div className="field-hero-caption">A living record of what I’ve built, learned, and followed.<span className="field-critter-invitation">Interact with the ascii critters throughout the page!</span></div>
           </div>
         </section>
 

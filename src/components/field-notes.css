@@ -82,6 +82,10 @@
 .dog-options pre{font-size:10px;min-height:76px}
 @media(prefers-reduced-motion:reduce){.snail-control{display:none}}
 
+/* Balance the intro below the actions and the caption below Jimmy. */
+.field-hero-actions + .field-hero-deck{margin-top:28px}
+.field-dog-scene{display:flex;flex-direction:column;justify-content:center;align-items:center;gap:28px}
+.field-dog-scene .field-hero-caption{margin-top:0;max-width:440px;text-align:center}
 /* Give the invitation breathing room and reserve a real layout slot for the frog. */
 .field-hero-caption{line-height:1.65}
 .field-critter-invitation{display:block;margin-top:14px}
