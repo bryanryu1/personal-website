@@ -3,7 +3,7 @@ import { Jimmy, ProjectBunny, TrailSnail, Frog } from "./FieldAnimals";
 
 const work = [
   { year: 2026, label: "PERSONAL / DATA VISUALIZATION", title: "P.R.N.D.L NYC",
-    href: "https://nyc-city-patterns-2026.bryanryu97.chatgpt.site/",
+    href: "/prndl-nyc",
     summary: "Park at youR owN risk Dude Lol",
     details: "Built in ChatGPT, P.R.N.D.L NYC turns NYC parking-ticket data into an interactive map and a location-based risk score. Park at your own risk!",
     tags: ["ChatGPT", "NYC Open Data", "Data visualization"], tone: "cream" },
