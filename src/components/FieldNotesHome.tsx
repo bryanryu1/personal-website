@@ -64,7 +64,6 @@ export function FieldNotesHome() {
       <header className="field-header">
         <a className="field-wordmark" href="#top" aria-label="Bryan Ryu, back to top">
           <span className="field-wordmark-mark">br<span>.</span></span>
-          <span className="field-wordmark-caption">FIELD NOTES<br />BY BRYAN RYU</span>
         </a>
         <nav aria-label="Main navigation" className="field-nav">
           <a href="#work">Projects</a>
@@ -91,7 +90,7 @@ export function FieldNotesHome() {
           </div>
         </section>
 
-        <div className="field-marquee" aria-hidden="true"><span>PRODUCT THINKING</span><i>✳</i><span>TECHNICAL DEPTH</span><i>✳</i><span>HUMAN CURIOSITY</span><i>✳</i><span>PRODUCT THINKING</span></div>
+        <div className="field-marquee" aria-hidden="true"><span>PRODUCT THINKING</span><i>✳</i><span>TECHNICAL DEPTH</span><i>✳</i><span>HUMAN CURIOSITY</span></div>
 
         <section id="work" className="field-section field-work" aria-labelledby="work-title">
           <div className="field-section-top"><span>01 / PERSONAL PROJECTS</span><span>SELECTED NOTES, 2020–NOW</span></div>

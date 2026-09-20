@@ -92,12 +92,26 @@
 @media(max-width:700px){
   .field-site a>span[aria-hidden=true],.field-card-open{display:none}
   .field-marquee{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));height:auto;min-height:64px;padding:14px 16px;gap:10px;white-space:normal;text-align:center;font-size:10px;letter-spacing:.08em;line-height:1.6}
-  .field-marquee i,.field-marquee>span:last-child{display:none}
+  .field-marquee i{display:none}
   .field-marquee>span+ i+span{border-left:1px solid #b4c69d;padding-left:10px}
   .field-about{padding-bottom:36px}
   .field-about-critter.animal-button{position:relative;right:auto;bottom:auto;display:flex;width:max-content;margin:30px 0 0 auto}
 }
 /* Touch browsers retain :hover after a tap; only explicit state should bark. */
+@media(min-width:701px){
+  .field-about-inner{row-gap:24px}
+  .field-about-critter.animal-button{position:relative;right:auto;bottom:auto;grid-column:2;justify-self:end;align-self:start}
+  .field-about{padding-bottom:40px}
+}
+/* Wider screens follow alternating stops; mobile keeps its single-column trail. */
+@media(min-width:801px){
+  .field-trail{max-width:1120px}
+  .field-trail .field-stop:nth-child(odd),.field-trail .field-stop:nth-child(even){width:calc(50% + 80px);margin-bottom:104px}
+  .field-trail .field-stop:nth-child(odd){margin-left:0;margin-right:auto}
+  .field-trail .field-stop:nth-child(even){margin-left:auto;margin-right:0}
+  .field-trail .field-stop:last-of-type{margin-bottom:0}
+  .field-trail .field-stop-card{width:calc(100% - 144px)}
+}
 @media(hover:none){
   .field-dog:not(.is-playing) .jimmy-asleep{opacity:1}
   .field-dog:not(.is-playing) .jimmy-awake,.field-dog:not(.is-playing) .jimmy-bark{opacity:0;animation:none}

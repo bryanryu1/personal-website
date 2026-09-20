@@ -158,6 +158,8 @@ function useSnailPace(paused: boolean) {
       const sideX = (card: DOMRect, left: boolean) => Math.max(halfWidth,Math.min(box.width-halfWidth,
         left ? card.left-box.left-halfWidth-8 : card.right-box.left+halfWidth+8));
       const progress = total ? distance.current/total : null;
+      // Measure each stop's actual edge so the trail follows both the mobile
+      // column and the alternating wide-screen layout without crossing cards.
       points = [{x:sideX(cards[0],false),y:startY}];
       cards.slice(1).forEach((card,i) => {
         const y = card.top-box.top-halfHeight-14;
@@ -176,6 +178,7 @@ function useSnailPace(paused: boolean) {
     const resize = new ResizeObserver(measure);
     resize.observe(habitat);
     resize.observe(section);
+    habitat.querySelectorAll(".field-stop-card").forEach(card => resize.observe(card));
     const entrance = new IntersectionObserver(entries => {
       if (entries.some(entry=>entry.isIntersecting)) {
         started.current = true;
