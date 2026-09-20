@@ -34,3 +34,7 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+## NYC Parking project
+
+The live parking app is available at [bryanryu.me/prndl-nyc](https://bryanryu.me/prndl-nyc). `next.config.ts` forwards this path and its assets to the separate `nyc-parking` Vercel project. Its source repository is [bryanryu1/nyc-parking](https://github.com/bryanryu1/nyc-parking); that project owns its data storage and monthly refresh jobs. Keep the two rewrite rules when updating the portfolio configuration.
