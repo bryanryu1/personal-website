@@ -78,13 +78,13 @@ export function FieldNotesHome() {
         <section className="field-hero" aria-labelledby="hero-title">
           <div className="field-hero-copy">
             <div className="field-kicker"><span className="field-kicker-line" /> NEW YORK, NY <span className="field-kicker-star">✳</span> SENIOR PRODUCT MANAGER</div>
-            <h1 id="hero-title">Hi, I’m Bryan.<br /><em>I connect</em> the dots.</h1>
+            <h1 id="hero-title">Hi, I’m Bryan.<br /><em>I connect</em> the dots and lines.</h1>
             <p className="field-hero-deck">I build products at the intersection of people, complex systems, and useful AI. Currently leading integrations for humans, AI tools, and AI agents at Aircall.</p>
             <div className="field-hero-actions">
               <a className="field-button-primary" href="#work">Explore my projects <span aria-hidden="true">↗</span></a>
               <a className="field-button-text" href="/Bryan_Ryu_Resume_2026.pdf" target="_blank" rel="noreferrer">View resume <span aria-hidden="true">↗</span></a>
             </div>
-            <div className="field-hero-caption">A living record of what I’ve built, learned, and followed.</div>
+            <div className="field-hero-caption">A living record of what I’ve built, learned, and followed.<br />Interact with the ascii critters throughout the page!</div>
           </div>
           <div className="field-dog-scene">
             <Jimmy />
@@ -143,8 +143,8 @@ export function FieldNotesHome() {
           <div className="field-about-inner">
             <div><span className="field-eyebrow">03 / OFF THE CLOCK</span><h2 id="about-title">A little more<br /><em>human</em> than a resume.</h2></div>
             <div className="field-about-copy">
-              <p>I’m a product manager with a solutions engineering background and a soft spot for useful tools, customer problems, and the systems behind them.</p>
-              <p>Outside work, you’ll usually find me bouldering, looking for good coffee, or training Muay Thai.</p>
+              <p>Outside work, you’ll usually find me bouldering, looking for good pourover coffee, or training Muay Thai (ooweee).</p>
+              <p>Thank you for stopping by and making it this far. Please send me a message or connect since you’re already here!</p>
               <div className="field-about-links"><a href="mailto:hello@bryanryu.me">Email me ↗</a><a href="https://www.linkedin.com/in/bryan-ryu/" target="_blank" rel="noreferrer">LinkedIn ↗</a><a href="/Bryan_Ryu_Resume_2026.pdf" target="_blank" rel="noreferrer">Resume ↗</a></div>
             </div>
             <Frog />
