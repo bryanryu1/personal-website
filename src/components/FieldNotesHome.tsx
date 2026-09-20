@@ -2,6 +2,11 @@ import "./field-notes.css";
 import { Jimmy, ProjectBunny, TrailSnail, Frog } from "./FieldAnimals";
 
 const work = [
+  { year: 2026, label: "PERSONAL / DATA VISUALIZATION", title: "P.R.N.D.L NYC",
+    href: "https://nyc-city-patterns-2026.bryanryu97.chatgpt.site/",
+    summary: "Park at youR owN risk Dude Lol",
+    details: "Built in ChatGPT, P.R.N.D.L NYC turns NYC parking-ticket data into an interactive map and a location-based risk score. Choose a spot or use your location to explore historical ticket activity by weekday and hour, see peak ticketing times, and visualize parking-ticket patterns across the city. The score reflects relative historical activity—not your probability of getting a ticket or permission to park. Coverage is partial; always check signs, meters, and curb rules. Park at your own risk!",
+    tags: ["ChatGPT", "NYC Open Data", "Data visualization"], tone: "cream" },
   { year: 2020, label: "PERSONAL / MOBILE", title: "Cook’d",
     href: "https://github.com/Do-Jest-While-True",
     summary: "A social recipe app for sharing what’s cooking.",
@@ -98,7 +103,7 @@ export function FieldNotesHome() {
             {work.map((item) => (
               <details key={item.href} className={`field-work-card field-tone-${item.tone}`}>
                 <summary>
-                  <div className="field-card-meta"><span>{item.year} / {item.label}</span><a className="field-card-open" href={item.href} target="_blank" rel="noopener noreferrer" aria-label={`View ${item.title} on GitHub (opens in a new tab)`}>↗</a></div>
+                  <div className="field-card-meta"><span>{item.year} / {item.label}</span><a className="field-card-open" href={item.href} target="_blank" rel="noopener noreferrer" aria-label={`View ${item.title} (opens in a new tab)`}>↗</a></div>
                   <h3><a href={item.href} target="_blank" rel="noopener noreferrer">{item.title}</a></h3>
                   <p>{item.summary}</p>
                   <div className="field-card-tags">{item.tags.map((tag) => <span key={tag}>{tag}</span>)}</div>
@@ -108,7 +113,7 @@ export function FieldNotesHome() {
               </details>
             ))}
           </div>
-          <p className="field-work-footnote">Explore the projects on GitHub. More experiments on the way.</p>
+          <p className="field-work-footnote">Explore the live projects and code. More experiments on the way.</p>
           <ProjectBunny />
         </section>
 
