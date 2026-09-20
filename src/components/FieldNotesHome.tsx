@@ -8,7 +8,7 @@ const work = [
     tags: ["React Native", "User research", "Product development"], tone: "dark" },
   { number: "02", label: "PERSONAL / MACHINE LEARNING", title: "Twitter Chatbot",
     summary: "An early experiment in generative conversation.",
-    details: "I built a generative Twitter chatbot with Python and TensorFlow, exploring natural language processing and machine learning.",
+    details: "A generative chatbot trained on tweets from Twitter (R.I.P.) to produce casual, conversational output.",
     tags: ["Python", "TensorFlow", "NLP"], tone: "lime" },
 ];
 
