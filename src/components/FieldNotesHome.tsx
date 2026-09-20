@@ -2,17 +2,17 @@ import "./field-notes.css";
 import { Jimmy, ProjectBunny, TrailSnail, Frog } from "./FieldAnimals";
 
 const work = [
-  { number: "01", label: "PERSONAL / MOBILE", title: "Cook’d",
+  { year: 2020, label: "PERSONAL / MOBILE", title: "Cook’d",
     href: "https://github.com/Do-Jest-While-True",
     summary: "A social recipe app for sharing what’s cooking.",
     details: "I built a React Native social recipe app and led user research, prioritization, and iterative product development.",
     tags: ["React Native", "User research", "Product development"], tone: "dark" },
-  { number: "02", label: "PERSONAL / MACHINE LEARNING", title: "Twitter Chatbot",
+  { year: 2021, label: "PERSONAL / MACHINE LEARNING", title: "Twitter Chatbot",
     href: "https://github.com/bryanryu1/twitter_project",
     summary: "An early experiment in generative conversation.",
     details: "A generative chatbot trained on tweets from Twitter (R.I.P.) to produce casual, conversational output.",
     tags: ["Python", "TensorFlow", "NLP"], tone: "lime" },
-];
+].sort((a, b) => b.year - a.year);
 
 const journey = [
   {
@@ -96,9 +96,9 @@ export function FieldNotesHome() {
           </div>
           <div className="field-work-grid">
             {work.map((item) => (
-              <details key={item.number} className={`field-work-card field-tone-${item.tone}`}>
+              <details key={item.href} className={`field-work-card field-tone-${item.tone}`}>
                 <summary>
-                  <div className="field-card-meta"><span>{item.number} / {item.label}</span><a className="field-card-open" href={item.href} target="_blank" rel="noopener noreferrer" aria-label={`View ${item.title} on GitHub (opens in a new tab)`}>↗</a></div>
+                  <div className="field-card-meta"><span>{item.year} / {item.label}</span><a className="field-card-open" href={item.href} target="_blank" rel="noopener noreferrer" aria-label={`View ${item.title} on GitHub (opens in a new tab)`}>↗</a></div>
                   <h3><a href={item.href} target="_blank" rel="noopener noreferrer">{item.title}</a></h3>
                   <p>{item.summary}</p>
                   <div className="field-card-tags">{item.tags.map((tag) => <span key={tag}>{tag}</span>)}</div>
