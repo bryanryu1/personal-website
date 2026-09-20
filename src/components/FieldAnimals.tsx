@@ -1,6 +1,6 @@
 "use client";
 
-import { useLayoutEffect, useRef, useState } from "react";
+import { useEffect, useLayoutEffect, useRef, useState } from "react";
 
 const dog = {
   "awake": "/^^^\\\n/ . . \\\nV\\ Y /V\n / - \\\n |    \\\n ||(__V",
@@ -9,8 +9,16 @@ const dog = {
 
 export function Jimmy() {
   const [barking, setBarking] = useState(false);
+  const button = useRef<HTMLButtonElement>(null);
+  useEffect(() => {
+    const dismiss = (event: PointerEvent) => {
+      if (event.target instanceof Node && !button.current?.contains(event.target)) setBarking(false);
+    };
+    document.addEventListener("pointerdown", dismiss, true);
+    return () => document.removeEventListener("pointerdown", dismiss, true);
+  }, []);
   return <div className="jimmy-studio">
-    <button type="button" className={`field-critter field-dog animal-button ${barking ? "is-playing" : ""}`} aria-label="Jimmy: wake him for an ASCII bark" aria-pressed={barking} onClick={() => setBarking(!barking)}>
+    <button ref={button} type="button" className={`field-critter field-dog animal-button ${barking ? "is-playing" : ""}`} aria-label="Jimmy: wake him for an ASCII bark" aria-pressed={barking} onClick={() => setBarking(value => !value)}>
       <div className="jimmy-drawing">
         <pre className="jimmy-asleep" aria-hidden="true">{dog.asleep}</pre>
         <pre className="jimmy-awake" aria-hidden="true">{dog.awake}</pre>
@@ -42,9 +50,9 @@ function useBunnyPosition() {
       if (!cards.length) return;
       let index = 0;
       if (!reduced.matches) cards.forEach((card, i) => {
-        if (card.getBoundingClientRect().top < innerHeight * .62) index = i;
+        if (card.getBoundingClientRect().top < innerHeight * .78) index = i;
       });
-      const atBorder = !reduced.matches && bounds.bottom < innerHeight * .52;
+      const atBorder = !reduced.matches && bounds.bottom < innerHeight * .68;
       if (atBorder) index = cards.length;
       const card = cards[Math.min(index, cards.length - 1)].getBoundingClientRect();
       const left = index % 2 === 1;
@@ -60,7 +68,7 @@ function useBunnyPosition() {
           { transform: "translate(" + previous.x + "px," + previous.y + "px)" },
           { transform: "translate(" + (previous.x+x)/2 + "px," + (Math.min(previous.y,y)-70) + "px)", offset: .45 },
           { transform: "translate(" + x + "px," + y + "px)" },
-        ], {duration: 850, easing: "ease-in-out"});
+        ], {duration: 480, easing: "ease-in-out"});
       }
       animal.dataset.perch = atBorder ? "border" : String(index + 1);
       animal.dataset.side = left ? "left" : "right";

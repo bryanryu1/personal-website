@@ -84,7 +84,7 @@ export function FieldNotesHome() {
               <a className="field-button-primary" href="#work">Explore my projects <span aria-hidden="true">↗</span></a>
               <a className="field-button-text" href="/Bryan_Ryu_Resume_2026.pdf" target="_blank" rel="noreferrer">View resume <span aria-hidden="true">↗</span></a>
             </div>
-            <div className="field-hero-caption">A living record of what I’ve built, learned, and followed.<br />Interact with the ascii critters throughout the page!</div>
+            <div className="field-hero-caption">A living record of what I’ve built, learned, and followed.<span className="field-critter-invitation">Interact with the ascii critters throughout the page!</span></div>
           </div>
           <div className="field-dog-scene">
             <Jimmy />
@@ -145,13 +145,13 @@ export function FieldNotesHome() {
             <div className="field-about-copy">
               <p>Outside work, you’ll usually find me bouldering, looking for good pourover coffee, or training Muay Thai (ooweee).</p>
               <p>Thank you for stopping by and making it this far. Please send me a message or connect since you’re already here!</p>
-              <div className="field-about-links"><a href="mailto:hello@bryanryu.me">Email me ↗</a><a href="https://www.linkedin.com/in/bryan-ryu/" target="_blank" rel="noreferrer">LinkedIn ↗</a><a href="/Bryan_Ryu_Resume_2026.pdf" target="_blank" rel="noreferrer">Resume ↗</a></div>
+              <div className="field-about-links"><a href="mailto:hello@bryanryu.me">Email me <span aria-hidden="true">↗</span></a><a href="https://www.linkedin.com/in/bryan-ryu/" target="_blank" rel="noreferrer">LinkedIn <span aria-hidden="true">↗</span></a><a href="/Bryan_Ryu_Resume_2026.pdf" target="_blank" rel="noreferrer">Resume <span aria-hidden="true">↗</span></a></div>
             </div>
             <Frog />
           </div>
         </section>
       </main>
-      <footer className="field-footer"><span>© 2026 BRYAN RYU</span><span>MADE WITH CURIOSITY · NEW YORK, NY</span><a href="#top">BACK TO TOP ↑</a></footer>
+      <footer className="field-footer"><span>© 2026 BRYAN RYU</span><span>MADE WITH CURIOSITY · NEW YORK, NY</span><a href="#top">BACK TO TOP <span aria-hidden="true">↑</span></a></footer>
     </div>
   );
 }

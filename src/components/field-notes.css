@@ -81,3 +81,26 @@
 .snail-control:focus-visible{outline:2px solid #49684c;outline-offset:2px}
 .dog-options pre{font-size:10px;min-height:76px}
 @media(prefers-reduced-motion:reduce){.snail-control{display:none}}
+
+/* Give the invitation breathing room and reserve a real layout slot for the frog. */
+.field-hero-caption{line-height:1.65}
+.field-critter-invitation{display:block;margin-top:14px}
+@media(max-width:700px){
+  .field-site a>span[aria-hidden=true],.field-card-open{display:none}
+  .field-marquee{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));height:auto;min-height:64px;padding:14px 16px;gap:10px;white-space:normal;text-align:center;font-size:10px;letter-spacing:.08em;line-height:1.6}
+  .field-marquee i,.field-marquee>span:last-child{display:none}
+  .field-marquee>span+ i+span{border-left:1px solid #b4c69d;padding-left:10px}
+  .field-about{padding-bottom:36px}
+  .field-about-critter.animal-button{position:relative;right:auto;bottom:auto;display:flex;width:max-content;margin:30px 0 0 auto}
+}
+/* Touch browsers retain :hover after a tap; only explicit state should bark. */
+@media(hover:none){
+  .field-dog:not(.is-playing) .jimmy-asleep{opacity:1}
+  .field-dog:not(.is-playing) .jimmy-awake,.field-dog:not(.is-playing) .jimmy-bark{opacity:0;animation:none}
+  .field-dog:not(.is-playing) .jimmy-dream{opacity:1}
+  .field-critter:hover pre{transform:none}
+  .field-frog:not(.is-playing) .frog-drawing{transform:none}
+  .field-frog:not(.is-playing) .frog-rest{opacity:1}
+  .field-frog:not(.is-playing) .frog-tongue{opacity:0}
+  .field-work-card:hover{transform:none;box-shadow:none}
+}
