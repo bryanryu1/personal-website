@@ -103,7 +103,7 @@ export function Hero() {
             Resume
           </a>
           <a
-            href="mailto:you@example.com"
+            href="mailto:hello@bryanryu.me"
             className="inline-flex items-center gap-2 rounded-full border border-border px-4 py-2.5 text-sm font-medium text-foreground transition-colors hover:border-accent hover:text-accent"
           >
             <Mail size={16} />

@@ -25,7 +25,7 @@ export function Footer() {
         </div>
 
         <a
-          href="mailto:you@example.com"
+          href="mailto:hello@bryanryu.me"
           className="inline-flex items-center gap-2 rounded-full bg-foreground px-5 py-2.5 text-sm font-medium text-background transition-transform hover:scale-[1.03] active:scale-95"
         >
           <Mail size={16} />

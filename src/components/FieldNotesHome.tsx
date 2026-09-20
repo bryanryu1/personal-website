@@ -70,7 +70,7 @@ export function FieldNotesHome() {
           <a href="#work">Projects</a>
           <a href="#journey">Journey</a>
           <a href="#about">About</a>
-          <a className="field-nav-contact" href="mailto:bryanryu97@gmail.com">Say hello <span aria-hidden="true">↗</span></a>
+          <a className="field-nav-contact" href="mailto:hello@bryanryu.me">Say hello <span aria-hidden="true">↗</span></a>
         </nav>
       </header>
 
@@ -145,7 +145,7 @@ export function FieldNotesHome() {
             <div className="field-about-copy">
               <p>I’m a product manager with a solutions engineering background and a soft spot for useful tools, customer problems, and the systems behind them.</p>
               <p>Outside work, you’ll usually find me bouldering, looking for good coffee, or training Muay Thai.</p>
-              <div className="field-about-links"><a href="mailto:bryanryu97@gmail.com">Email me ↗</a><a href="https://www.linkedin.com/in/bryan-ryu/" target="_blank" rel="noreferrer">LinkedIn ↗</a><a href="/Bryan_Ryu_Resume_2026.pdf" target="_blank" rel="noreferrer">Resume ↗</a></div>
+              <div className="field-about-links"><a href="mailto:hello@bryanryu.me">Email me ↗</a><a href="https://www.linkedin.com/in/bryan-ryu/" target="_blank" rel="noreferrer">LinkedIn ↗</a><a href="/Bryan_Ryu_Resume_2026.pdf" target="_blank" rel="noreferrer">Resume ↗</a></div>
             </div>
             <Frog />
           </div>

@@ -148,7 +148,7 @@ export function FieldNotesExperience() {
             <div className="mt-9 flex flex-wrap gap-x-6 gap-y-3 text-sm font-semibold text-[#1a5c2d]">
               <a href="#specimens" className="border-b border-[#1a5c2d] pb-1 hover:text-[#089141]">Selected work ↓</a>
               <a href="#trail" className="border-b border-transparent pb-1 hover:border-[#1a5c2d]">Career route ↓</a>
-              <a href="mailto:bryanryu97@gmail.com" className="border-b border-transparent pb-1 hover:border-[#1a5c2d]">Email ↗</a>
+              <a href="mailto:hello@bryanryu.me" className="border-b border-transparent pb-1 hover:border-[#1a5c2d]">Email ↗</a>
               <a href="https://linkedin.com/in/bryan-ryu" target="_blank" rel="noreferrer" className="border-b border-transparent pb-1 hover:border-[#1a5c2d]">LinkedIn ↗</a>
             </div>
           </div>
@@ -267,7 +267,7 @@ export function FieldNotesExperience() {
             <div>
               <p className="text-[11px] font-bold uppercase tracking-[0.16em] text-[#397a48]">Bryan Ryu</p>
               <h2 className="mt-4 max-w-sm font-serif text-3xl tracking-[-0.04em] text-[#214b29]">Product thinking with technical depth.</h2>
-              <a href="mailto:bryanryu97@gmail.com" className="mt-6 inline-block text-sm font-semibold text-[#18783a] underline underline-offset-4">bryanryu97@gmail.com ↗</a>
+              <a href="mailto:hello@bryanryu.me" className="mt-6 inline-block text-sm font-semibold text-[#18783a] underline underline-offset-4">hello@bryanryu.me ↗</a>
             </div>
             <div>
               <p className="text-[11px] font-bold uppercase tracking-[0.16em] text-[#397a48]">Product</p>
