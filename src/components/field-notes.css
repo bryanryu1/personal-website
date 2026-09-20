@@ -105,8 +105,10 @@
 }
 /* Wider screens follow alternating stops; mobile keeps its single-column trail. */
 @media(min-width:801px){
-  .field-trail{max-width:1120px}
-  .field-trail .field-stop:nth-child(odd),.field-trail .field-stop:nth-child(even){width:calc(50% + 80px);margin-bottom:104px}
+  /* 160px card overlap + 72px outer gutters keeps the snail's crossovers
+     a consistent 240px, instead of shrinking as the viewport widens. */
+  .field-trail{max-width:824px}
+  .field-trail .field-stop:nth-child(odd),.field-trail .field-stop:nth-child(even){width:calc(50% + 152px);margin-bottom:104px}
   .field-trail .field-stop:nth-child(odd){margin-left:0;margin-right:auto}
   .field-trail .field-stop:nth-child(even){margin-left:auto;margin-right:0}
   .field-trail .field-stop:last-of-type{margin-bottom:0}

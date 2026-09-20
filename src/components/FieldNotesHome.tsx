@@ -143,6 +143,7 @@ export function FieldNotesHome() {
             <div><span className="field-eyebrow">03 / OFF THE CLOCK</span><h2 id="about-title">A little more<br /><em>human</em> than a resume.</h2></div>
             <div className="field-about-copy">
               <p>Outside work, you’ll usually find me bouldering, looking for good pourover coffee, or training Muay Thai (ooweee).</p>
+              <p>Here are some (maybe exaggerated) testimonials: “the most well-rounded friend (they) know,” “coolest guy in the office,” and my grandpa’s “favorite grandchild.”</p>
               <p>Thank you for stopping by and making it this far. Please send me a message or connect since you’re already here!</p>
               <div className="field-about-links"><a href="mailto:hello@bryanryu.me">Email me <span aria-hidden="true">↗</span></a><a href="https://www.linkedin.com/in/bryan-ryu/" target="_blank" rel="noreferrer">LinkedIn <span aria-hidden="true">↗</span></a><a href="/Bryan_Ryu_Resume_2026.pdf" target="_blank" rel="noreferrer">Resume <span aria-hidden="true">↗</span></a></div>
             </div>
